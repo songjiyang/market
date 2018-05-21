@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/static/js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="/static/css/flexslider.css" type="text/css" media="screen" />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='https://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="/static/js/move-top.js"></script>
+<script type="text/javascript" src="/static/js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+ <!--video -->	
+<link href="/static/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/static/js/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Finding Nemo Teaser",
+				m4v: "http://www.jplayer.org/video/m4v/Finding_Nemo_Teaser.m4v",
+				poster: "images/cake.jpg"
+
+			});
+		},
+		swfPath: "../../dist/jplayer",
+		supplied: "m4v",
+		size: {
+			width: "100%",
+			height: "275px",
+			cssClass: "jp-video-360p"
+		},
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true,
+		remainingDuration: true,
+		toggleDuration: true
+	});
+});
+//]]>
+</script>
+<!--//video -->
+<!--audio strat-->
+<link rel="stylesheet" type="text/css" media="all" href="/static/css/audio.css">
+<script type="text/javascript" src="/static/js/mediaelement-and-player.min.js"></script>
+<!-- audio end-->
+<!--pop up strat here-->
+<script src="/static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+
+ <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+<!--pop up end here-->
+<script src="/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--header strat here-->
+<div class="mother-grid">
+	<div class="logo-name">
+		<h3><span class="log-clr">M</span>arket <span class="log-clr">A</span>nalysis</h3>
+	</div>
+   <div class="part-1">
+<!--top nav strat here-->
+{#   	   <div class="top-navg">#}
+{#			<div class=" nav1">#}
+{#				<span class="menu"><img src="/static/images/menu.png" alt=""> </span>#}
+{#					<ul>#}
+{#						<div class="notch1"> </div>#}
+{#						<li class="hover-border"><a href="#">Watching to new movie</a></li>#}
+{#						<li><a href="#" >Listening to music</a></li>	#}
+{#						<li><a href="#" >Play new game</a></li>#}
+{#						<li class="hover-border1"><a href="#" >Learn how to make a design</a></li>							#}
+{#					</ul>#}
+{#					<script>#}
+{#						$("span.menu").click(function(){#}
+{#							$(".nav1 ul").slideToggle(500, function(){#}
+{#							});#}
+{#						});#}
+{#					</script>#}
+{#			</div>#}
+{#			<div class="header-top">#}
+{#				<div class="top-menu">#}
+{#					<nav class="navbar navbar-inverse navbar-static-top">		         #}
+{#			            <div class="navbar-header">#}
+{#			              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">#}
+{#			                <span class="sr-only">Toggle navigation</span>#}
+{#			                <span class="icon-bar"></span>#}
+{#			                <span class="icon-bar"></span>#}
+{#			                <span class="icon-bar"></span>#}
+{#			              </button>		         #}
+{#			            </div>#}
+{#			             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">#}
+{#			              <ul class="nav navbar-nav">#}
+{#			                <li class="active"><a class="vilot-clr" href="#">Home</a></li>#}
+{#			                <li><a class="vilot-clr" href="#">About</a></li>		               #}
+{#			                <li class="dropdown">#}
+{#			                  <a href="#" class="dropdown-toggle vilot-clr" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>#}
+{#			                  <ul class="dropdown-menu adjast-drp-wid">#}
+{#			                  	<div class="notch2"> </div>#}
+{#			                    <li class="hover-border"><a href="#"><i class="movie-rel"> </i>Watching to new movie</a></li>#}
+{#			                    <li><a href="#"><i class="disk"> </i> Listening to music</a></li>#}
+{#			                    <li><a href="#"><i class="cards"> </i> Play new game</a></li>		                   #}
+{#			                    <li class="hover-border1"><a href="#"><i class="learn"> </i>Learn how to design</a></li>#}
+{#			                  </ul>#}
+{#			                </li>#}
+{#			                 <li><a class="vilot-clr" href="#">Portfolio</a></li>#}
+{#			                 <li><a class="vilot-clr" href="#">Contact</a></li>#}
+{#			              </ul>#}
+{#			            </div>		          #}
+{#			        </nav>#}
+{#				</div>#}
+{#				<div class="search-block1">#}
+{#					<div class="serch1">#}
+{#						<form>#}
+{#							<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}" >#}
+{#							<input type="submit" value="" >#}
+{#						</form>#}
+{#					</div>#}
+{#				</div>	#}
+{#					<div class="clearfix"> </div>#}
+{#	        </div>#}
+		<div class="clearfix"> </div>
+	</div>
+<!--bottom navg-->
+<!--block-3 strat here-->
+	<div class="block-3">
+		<div class="block-3-left">
+		<div class="wine-img">
+			
+		</div>
+		 <div class="wine-text">
+			<h1>邯郸市邯山区各个商区大众点评用户数量</h1>
+			<p>从图中可以得出。。。</p>
+		</div>
+	   </div>
+<!-- block-4 strat here-->
+	   <div class="block-3-right">
+	   	<div class="wine-img1">
+	   		<h3>New Flavour</h3>
+	   		<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots</p>
+	   		<img src="/static/images/region_sex_count.png" alt="">
+	   	</div>
+	   </div>
+	   <div class="clearfix">  </div>
+	</div>
+<!-- block-4 strat here-->
+	<div class="block-4">
+	  <div class="block-4-top">
+		<div class="slider">
+		    <ul class="rslides" id="slider1">
+		      <li><img src="/static/images/region_age_count.png" alt=""></li>
+		    </ul>
+       </div>
+      </div>
+      <div class="block-4-bottom">
+      	 <h2>Full Width Slider</h2>
+      	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      	 <p>Ut enim ad minim veniam, quis nostrud Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+	</div>
+<!--slider-->
+<script src="/static/js/responsiveslides.min.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+         auto: true,
+		 nav: true,
+		 speed: 500,
+		 namespace: "callbacks",
+      });
+    });
+  </script>
+<!--pop-up-grid-->
+<!--header end here-->
+</body>
+</html>
+
+
+		
